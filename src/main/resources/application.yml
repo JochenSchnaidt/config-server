@@ -1,0 +1,15 @@
+server:
+  port: 8090
+
+spring:
+  application:
+    name: configserver
+  cloud.config.server.git:
+    uri: http://localhost/Jochen/configuration-repository.git
+    clone-on-start: true
+    username: Jochen
+    password: QY22RVqmja4S7vK
+
+  security.user:
+    name: root
+    password: s3cr3t
